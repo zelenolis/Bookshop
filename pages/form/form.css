@@ -1,0 +1,108 @@
+html {
+	font-size: 10px;
+	background-color: MintCream;
+}
+h1 {
+	color: olivedrab;
+	font-size: 1.8rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+
+form {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 10px;
+	width: 50vh;
+	margin: 0;
+	padding: 10px;
+	border: 2px solid olivedrab;
+	border-radius: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+form label {
+	align-items: baseline;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	font-size: 1.8rem;
+}
+form input {
+	width: 25vh;
+	justify-self: baseline;
+	margin-left: 10px;
+	border-radius: 4px;
+}
+form p {
+	font-size: 1.8rem;
+	font-style: italic;
+	margin: 0;
+}
+.invis {
+	display: none;
+}
+.gifts label {
+	font-size: 1.2rem;
+	align-items: center;
+	padding: 5px 0;
+}
+.button {
+	background-color: olivedrab;
+	border-style: none;
+	border-radius: 5px;
+	padding: 10px;
+	color: mintcream;
+	font-size: 2rem;
+}
+.button:hover {
+	cursor: pointer;
+}
+.button:disabled {
+	background-color: lightgrey;
+	cursor: auto;
+}
+
+input:valid {
+	background-color: #ccffcc;
+}
+
+input:invalid {
+	background-color: #ffe6e6;
+}
+.divMessage {
+	border-radius: 15px;
+	border: 2px solid olivedrab;
+	width: 50vh;
+	margin: 0;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.divMessage p {
+	font-size: 1.8rem;
+	text-align: center;
+}
+.messageThree {
+	margin: 0;
+	padding: 35px 0 10px 0;
+}
+.back {
+	color: mintcream;
+	padding: 10px;
+	text-decoration: none;
+	background-color: olivedrab;
+	border: 2px solid olivedrab;
+	border-radius: 5px;
+	font-size: 1.8rem;
+	display: block;
+	margin-top: 5vh;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 25vh;
+}
+.back:hover {
+	color: black;
+	transition: 0.5s;
+}

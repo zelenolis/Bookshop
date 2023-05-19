@@ -1,0 +1,273 @@
+html {
+	font-size: 10px;
+	background-color: MintCream;
+}
+header {
+	background-color: DarkOliveGreen;
+	color: WhiteSmoke;
+	font-size: 1.6rem;
+	text-align: center;
+	padding: 20px 0;
+	text-transform: uppercase;
+}
+header h1 {
+	margin: 0;
+}
+.main {
+	display: flex;
+}
+.book {
+	background-color: MintCream;
+	float: left;
+	width: 80%;
+	display: grid;
+}
+@media (min-width: 1028px) {
+	.book {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media (max-width: 1027px) {
+	.book {
+		grid-template-columns: 1fr;
+	}
+}
+.book article {
+	padding: 2rem;
+	position: relative;
+}
+.book img {
+	float: left;
+	padding-right: 2rem;
+	max-width: 225px;
+	max-height: 225px;
+}
+.book__img:hover{
+	cursor: pointer;
+}
+.book__title {
+	font-size: 2rem;
+	margin: 0;
+}
+.book__author {
+	font-size: 1.7rem;
+	font-style: italic;
+}
+.book__price {
+	font-size: 2rem;
+	font-weight: bold;
+	position: absolute;
+	bottom: 70px;
+	left: 215px;
+}
+.book__wrapper {
+	vertical-align: text-bottom; 
+	position: absolute;
+	bottom: 0;
+	left: 210px;
+}
+.book button {
+	padding: 5px 20px;
+	margin: 5px;
+	background-color: MintCream;
+	border: 2px solid DarkOliveGreen;
+	border-radius: 5px;
+	font-size: 1.3rem;
+	font-weight: bold;
+	width: 110px;
+	vertical-align: text-bottom; 
+	position: absolute;
+}
+.book__about {
+	bottom: 35px;
+	right: 80px;
+}
+.book__button {
+	bottom: 0;
+	right: 80px;
+}
+
+.book button:hover {
+	background-color: DarkOliveGreen;
+	cursor: pointer;
+}
+
+.cart {
+	align-self: flex-start;
+	position: sticky;
+	top: 0;
+	width: 20%;
+	height: auto;
+	background-color: Lavender;
+	box-sizing: border-box;
+	padding-bottom: 20vh;
+}
+.cart__border {
+	border: 2px dotted DarkOliveGreen;
+}
+.cart__wrapper {
+	max-width: 100%;
+	height: 10vh;
+	margin: 5px;
+	padding: 5px;
+	border: 2px groove;
+	border-radius: 5px;
+	position: relative;
+	pointer-events: none;
+}
+.cart__wrapper:hover {
+	border: 2px inset;
+}
+.cart__image {
+	position: absolute;
+	top: 0;
+	max-height: 100%;
+	max-width: 20%;
+	float: left;
+}
+.cart__title {
+	position: absolute;
+	left: 24%;
+	margin: 0;
+}
+@media (min-width: 1028px) {
+	.cart__title {
+		font-size: 1rem;
+		max-width: 63%;
+	}
+}
+@media (max-width: 1027px) {
+	.cart__title {
+		font-size: 0.8rem;
+		max-width: 58%;
+	}
+}
+.cart__quantity {
+	position: absolute;
+	bottom: 15px;
+	right: 5%;
+	margin: 0;
+}
+.cart__price {
+	position: absolute;
+	bottom: 5px;
+	right: 5%;
+	margin: 0;
+}
+.cart__quantity__title {
+	font-style: italic;
+	position: absolute;
+	bottom: 15px;
+	right: 12%;
+	margin: 0;
+}
+.cart__price__title {
+	font-style: italic;
+	position: absolute;
+	bottom: 5px;
+	right: 12%;
+	margin: 0;
+}
+.cart__delete {
+	height: 20%;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	pointer-events: auto;
+}
+.cart__delete:hover {
+	cursor: pointer;
+	transform: rotate(22deg);
+	transition: 0.3s;
+}
+.cart__empty {
+	text-align: center;
+	font-size: 20px;
+	color: darkolivegreen;
+}
+.total__quantity {
+	position: absolute;
+	bottom: 42px;
+	right: 60px;
+	font-size: 2rem;
+}
+.total__price {
+	position: absolute;
+	bottom: 42px;
+	right: 20px;
+	font-size: 2rem;
+}
+.confirm {
+	position: absolute;
+	bottom: 0;
+	left: 30%;
+	text-decoration: none;
+	color: MintCream;
+	padding: 5px 20px;
+	margin: 5px;
+	background-color: DarkOliveGreen;
+	border: 2px solid DarkOliveGreen;
+	border-radius: 5px;
+	font-size: 1.5rem;
+	vertical-align: text-bottom;
+}
+.confirm:hover {
+	color: DarkOliveGreen;
+	background-color: MintCream;
+	border-color: MintCream;
+}
+.popup {
+	position: absolute;
+	width: 50vh;
+	background-color: Lavender;
+	z-index: 1;
+	padding: 10px;
+	border-style: outset;
+	border-width: 1px;
+}
+.popup__head {
+	font-size: 1.8rem;
+	max-width: 80%;
+	margin: 0;
+	padding: 2%;
+}
+.popup__sub {
+	font-size: 1.5rem;
+	font-style: italic;
+	padding-left: 5%;
+}
+.popup__txt {
+	font-size: 1.2rem;
+	text-align: justify;
+}
+.popup__close{
+	height: 15%;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+.popup__close:hover {
+	cursor: pointer;
+	transform: rotate(22deg);
+	transition: 0.3s;
+}
+footer {
+	clear: both;
+	background-color: MintCream;
+	height: 15vh;
+	width: 100%;
+}
+.foot__head {
+	font-size: 2rem;
+	text-align: center;
+	color: Grey;
+	vertical-align: baseline;
+	font-style: italic;
+}
+.foot__txt {
+	font-size: 1.5rem;
+	text-align: right;
+	padding-right: 20%;
+	color: Grey;
+	font-style: italic;
+}
